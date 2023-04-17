@@ -1,0 +1,537 @@
+/*--------------------------------------------------
+	Button1
+---------------------------------------------------*/
+.button1 {
+  background-color: #fff;
+  pointer-events: auto;
+  transition: background-color 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+    border 1s cubic-bezier(0.19, 1, 0.22, 1),
+    color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.button1 a {
+  color: #000;
+}
+.button1 .mask {
+  background-color: #000;
+  transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+}
+.button1 .shift {
+  vertical-align: auto;
+}
+.button1 .shift span svg {
+  display: none;
+}
+.button1 .shift .bar {
+  font: inherit;
+  text-transform: none;
+  cursor: pointer;
+  line-height: inherit;
+  text-shadow: none;
+  font-size: inherit;
+  color: #444;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  background-color: #444;
+  transition: all 0.3s;
+  width: 20px;
+  height: 1px;
+  margin-bottom: 6px;
+}
+.button1 .shift .bar.bar2 {
+  display: none !important;
+}
+.button1 .shift .bar.bar3 {
+  margin-bottom: 0 !important;
+}
+.button1:hover {
+  background-color: #000;
+  border-color: #fff;
+}
+.button1:hover a {
+  color: #fff;
+  font-weight: 500;
+}
+.button1:hover a span {
+  color: #fff;
+  font-weight: 500;
+}
+.button1:hover .mask {
+  background-color: #444;
+  transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+}
+.button1:hover .shift {
+  transform: translateX(0.3125rem);
+}
+.button1:hover .shift .bar {
+  color: #fff;
+  background-color: #fff;
+}
+.button1:active {
+  background-color: #fff;
+}
+.button1:active a {
+  color: #fff;
+}
+.dotBtn .button1 {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.dotBtn .button1 a span {
+  padding-left: 0;
+}
+.contactBtn .button1 .shift span svg {
+  padding-left: 5px;
+  display: block;
+  width: 60%;
+  transition: all 0.3s;
+}
+
+/*--------------------------------------------------
+	Button2
+---------------------------------------------------*/
+.button2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.button2.learn-more {
+  width: 12rem;
+  height: auto;
+}
+.button2.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+.button2.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+.button2.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.button2.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+.button2.learn-more .button2-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem 0;
+  margin: 0 0 0 1.85rem;
+  /* color: #282936; */
+  font-weight: 400;
+  line-height: 2;
+  text-align: center;
+  /* text-transform: uppercase; */
+}
+.button2:hover .circle {
+  width: 100%;
+}
+.button2:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+.button2:hover .button-text {
+  color: #fff;
+}
+
+/*--------------------------------------------------
+	Others
+---------------------------------------------------*/
+
+/* Blink Animation */
+.blink {
+  animation: blink-animation 1.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 350px) {
+  #Phone {
+    display: none;
+  }
+  #logo {
+    justify-content: end;
+  }
+  #Since {
+    margin-right: 10px;
+  }
+}
+
+/* Marquee */
+.marquee-container .overlay {
+  display: none;
+}
+
+/*--------------------------------------------------
+	Home
+---------------------------------------------------*/
+/* Hero */
+.card {
+  perspective: 150rem;
+}
+.Side {
+  height: 30vw;
+  width: 30vw;
+  transition: all 0.8s ease;
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+.front.img1 {
+  background: url("./assets/photos/others/htnew.jpeg");
+  background-size: cover;
+}
+.front.img2 {
+  background: url("./assets/photos/service/non-clinical.webp");
+  background-size: cover;
+}
+.front.img3 {
+  background: url("./assets/photos/service/ImgFull/ST/sht.webp");
+  background-size: cover;
+}
+.front.img4 {
+  background: url("./assets/photos/service/ImgFull/NST/olt.webp");
+  background-size: cover;
+}
+.card .back {
+  transform: rotateY(180deg);
+  background-color: #1c1c1c;
+}
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+.card:last-child {
+  margin-right: 0;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 50vw;
+  height: 50vw;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+}
+
+.flip-card-back {
+  background: #000;
+  color: white;
+  transform: rotateY(180deg);
+}
+.innerServiceWRapper {
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service svg {
+  margin-left: 2vw;
+  margin-top: 1.5vw;
+  width: 0.5vw;
+}
+.service span {
+  margin-top: 10px;
+}
+.service img.s1 {
+  display: none;
+}
+.service:hover img.s1 {
+  display: block;
+  animation: createBox 0.25s;
+}
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.service:hover span {
+  z-index: 20;
+  /* color: #fff; */
+}
+
+.service:hover .glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #000;
+  }
+  to {
+    text-shadow: 0 0 10px #000;
+  }
+}
+
+/* Aside */
+.Main-Menu .About:hover .inner-menu,
+.Main-Menu .Services:hover .inner-menu,
+.Main-Menu .More:hover .inner-menu {
+  display: block !important;
+}
+
+/* Button3 */
+.space-btn {
+  position: relative;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  line-height: 1;
+  font-weight: 500;
+  color: #444;
+  margin: 0;
+  padding: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.space-btn:hover {
+  color: #000;
+}
+.space-btn:focus {
+  color: #000;
+  outline: none;
+}
+.space-btn:active {
+  color: #000;
+}
+.space-btn:before,
+.space-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+.space-btn:before {
+  top: 0;
+  left: 0;
+  box-shadow: inset 2px 2px 0 0 #444;
+}
+.space-btn:after {
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -2px -2px 0 0 #444;
+}
+.space-btn:hover:before {
+  animation: hoverShadowBefore 1s forwards;
+}
+.space-btn:hover:after {
+  animation: hoverShadowAfter 1s forwards;
+}
+@keyframes hoverShadowBefore {
+  0% {
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
+  33% {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  66% {
+    width: 2px;
+    height: 2px;
+    top: calc(100% - 1px);
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    height: 2px;
+    top: calc(100% - 1px);
+    left: 0;
+  }
+}
+@keyframes hoverShadowAfter {
+  0% {
+    width: 100%;
+    height: 2px;
+  }
+  33% {
+    width: 2px;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+  }
+  66% {
+    width: 2px;
+    height: 2px;
+    bottom: calc(100% - 2px);
+    right: 0;
+  }
+  100% {
+    width: 100%;
+    height: 2px;
+    bottom: calc(100% - 2px);
+    right: 0;
+  }
+}
+
+.innerSection:hover {
+  transform: scale(1.1);
+  font-weight: 900;
+}
+
+.innerService:hover {
+  color: #000;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: scale(1.05) 1.25s;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.innerService:hover hr {
+  border-color: #000;
+}
+
+.innerServiceWRapper {
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mb3vh {
+  margin-bottom: 3vh !important;
+}
+
+.error {
+  display: block;
+  font-size: 12px;
+  color: red;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+.btn.green {
+  border: 4px solid #2ccf6d;
+  color: var(--blue);
+}
+.btn.green:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #2ccf6d;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+.btn.green:hover {
+  color: #fff;
+  background: #2ccf6d;
+  transition: 0.2s ease;
+}
+.btn.green:hover:before {
+  width: 100%;
+}
+
+.BlogCard {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* padding: 2rem 1rem 1em 1rem; */
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  overflow: visible !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: 5px;
+} */
+
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: scroll;
+  transition: opacity 0.3s ease-in-out 0.2s;
+  -webkit-transition: opacity 0.3s ease-in-out 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: calc(1rem + 4.15vw);
+  line-height: calc(1rem + 5.5vw);
+}
+
+h2 {
+  font-size: calc(1rem + 3.5vw);
+  line-height: calc(1rem + 4.5vw);
+}
+
+h3 {
+  font-size: calc(1rem + 2vw);
+  line-height: calc(1rem + 3.5vw);
+}
+
+h4 {
+  font-size: calc(1rem + 1vw);
+  line-height: calc(1rem + 2.5vw);
+}
+
+h5 {
+  font-size: calc(1rem + 0.42vw);
+  line-height: calc(1rem + 1.5vw);
+}
+
+h6 {
+  font-size: calc(1rem + 0.3vw);
+  line-height: calc(1rem + 1vw);
+}
+
+h1 span,
+h2 span,
+h3 span {
+  display: table;
+  margin-top: -0.7vw;
+}
+
+p {
+  font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+/*--------------------------------------------------
+	Custom Styles
+---------------------------------------------------*/
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.txtshadow {
+  text-shadow: 1px 1px 2px black;
+}
