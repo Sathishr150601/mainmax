@@ -66,7 +66,7 @@ export { default as Milestones } from "./photos/about/Milestones.webp";
 
 // Before After
 
-export { default as BA1 } from "./photos/ba/BA1.webp";
+export { default as BA1 } from "./photos/ba/ba1.webp";
 export { default as BA2 } from "./photos/ba/BA2.webp";
 export { default as BA3 } from "./photos/ba/BA3.webp";
 export { default as BA4 } from "./photos/ba/BA4.webp";
@@ -81,7 +81,7 @@ export { default as BA12 } from "./photos/ba/BA12.webp";
 export { default as BA13 } from "./photos/ba/BA13.webp";
 export { default as BA14 } from "./photos/ba/BA14.webp";
 export { default as BA15 } from "./photos/ba/BA15.webp";
-export { default as BA16 } from "./photos/ba/BA16.webp";
+export { default as BA16 } from "./photos/ba/BA16.webp";    
 export { default as BA17 } from "./photos/ba/BA17.webp";
 export { default as BA18 } from "./photos/ba/BA18.webp";
 export { default as BA19 } from "./photos/ba/BA19.webp";
